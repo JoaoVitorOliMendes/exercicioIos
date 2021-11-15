@@ -8,11 +8,16 @@
 import UIKit
 import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, homeDelegate {
+    
+    func didCreateUser() {
+        print("asdasdasd")
+        self.gotoHome()
+    }
+    
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtSenha: UITextField!
-    var auth: Auth?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +35,22 @@ class LoginViewController: UIViewController {
             return
         }
         
-        self.auth?.signIn(withEmail: email, password: senha, completion: { (result, e) in
+        Auth.auth().signIn(withEmail: email, password: senha, completion: { (result, e) in
             if e != nil{
                 print(e)
             }else{
                 self.showToast(message: "Login")
+                self.gotoHome()
             }
         })
     }
     @IBAction func btnRegister(_ sender: Any) {
     }
     @IBAction func btnForgotPass(_ sender: Any) {
+    }
+    
+    func gotoHome() {
+        self.performSegue(withIdentifier: "home", sender: self)
     }
     
     func showToast(message : String) {
@@ -72,3 +82,4 @@ class LoginViewController: UIViewController {
     */
 
 }
+

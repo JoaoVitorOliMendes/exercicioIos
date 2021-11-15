@@ -6,13 +6,14 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
 
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtSenha: UITextField!
     @IBOutlet weak var txtConfirmarSenha: UITextField!
+    weak var delegate: homeDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,29 +30,25 @@ class RegisterViewController: UIViewController {
         if email == "" || senha == "" || confirmarSenha == "" {
             self.showToast(message: "Preencha todos os campos")
             return
-        }else if(senha != confirmarSenha) {
+        }else if(senha.count < 6) {
+            self.showToast(message: "A senhas deve ter mais de 6 caracteres")
+            return
+        }
+        else if(senha != confirmarSenha) {
             self.showToast(message: "As senhas estao diferentes")
             return
         }else {
-            var ref: DatabaseReference!
-            
-            ref = Database.database().reference().child("usuarios")
-            
-            let key = ref.childByAutoId().key!
-            print(key)
-            let user: [String: String] = [
-                "id": String(key),
-                "email": email,
-                "senha": senha
-            ]
-            ref.child(key).setValue(user) {
-                (e: Error?, ref: DatabaseReference) in
-                if let error = e {
+
+            Auth.auth().createUser(withEmail: email, password: senha, completion: {
+                authReult, error in
+                if error != nil {
                     self.showToast(message: "\(error)")
                 }else {
                     self.showToast(message: "success")
+                    
+                    self.delegate?.didCreateUser()
                 }
-            }
+            })
         }
     }
     
@@ -83,4 +80,8 @@ class RegisterViewController: UIViewController {
     }
     */
 
+}
+
+protocol homeDelegate: AnyObject {
+    func didCreateUser()
 }
