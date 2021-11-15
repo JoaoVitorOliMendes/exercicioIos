@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,15 @@
 		DC92B88827429D7F003B23D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC92B88627429D7F003B23D5 /* Main.storyboard */; };
 		DC92B88A27429D86003B23D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC92B88927429D86003B23D5 /* Assets.xcassets */; };
 		DC92B88D27429D86003B23D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC92B88B27429D86003B23D5 /* LaunchScreen.storyboard */; };
+		DC92B89627429DD2003B23D5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC92B89527429DD2003B23D5 /* GoogleService-Info.plist */; };
+		DC92B89C27429DE5003B23D5 /* logo-footer-colegio.png in Resources */ = {isa = PBXBuildFile; fileRef = DC92B89927429DE5003B23D5 /* logo-footer-colegio.png */; };
+		DC92B89D27429DE5003B23D5 /* Cores.json in Resources */ = {isa = PBXBuildFile; fileRef = DC92B89A27429DE5003B23D5 /* Cores.json */; };
+		DC92B89E27429DE5003B23D5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B89B27429DE5003B23D5 /* GradientView.swift */; };
+		DC92B8A227429E32003B23D5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DC92B8A127429E32003B23D5 /* FirebaseAuth */; };
+		DC92B8A427429E32003B23D5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DC92B8A327429E32003B23D5 /* FirebaseDatabase */; };
+		DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8A727429FC8003B23D5 /* LoginViewController.swift */; };
+		DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */; };
+		DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,13 @@
 		DC92B88927429D86003B23D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC92B88C27429D86003B23D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC92B88E27429D86003B23D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC92B89527429DD2003B23D5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC92B89927429DE5003B23D5 /* logo-footer-colegio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-footer-colegio.png"; sourceTree = "<group>"; };
+		DC92B89A27429DE5003B23D5 /* Cores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Cores.json; sourceTree = "<group>"; };
+		DC92B89B27429DE5003B23D5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		DC92B8A727429FC8003B23D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC92B8A427429E32003B23D5 /* FirebaseDatabase in Frameworks */,
+				DC92B8A227429E32003B23D5 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +76,28 @@
 			children = (
 				DC92B88027429D7F003B23D5 /* AppDelegate.swift */,
 				DC92B88227429D7F003B23D5 /* SceneDelegate.swift */,
+				DC92B89527429DD2003B23D5 /* GoogleService-Info.plist */,
 				DC92B88427429D7F003B23D5 /* ViewController.swift */,
 				DC92B88627429D7F003B23D5 /* Main.storyboard */,
 				DC92B88927429D86003B23D5 /* Assets.xcassets */,
 				DC92B88B27429D86003B23D5 /* LaunchScreen.storyboard */,
+				DC92B89B27429DE5003B23D5 /* GradientView.swift */,
 				DC92B88E27429D86003B23D5 /* Info.plist */,
+				DC92B89827429DE5003B23D5 /* Recursos */,
+				DC92B8A727429FC8003B23D5 /* LoginViewController.swift */,
+				DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */,
+				DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */,
 			);
 			path = ExercicioIos;
+			sourceTree = "<group>";
+		};
+		DC92B89827429DE5003B23D5 /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				DC92B89927429DE5003B23D5 /* logo-footer-colegio.png */,
+				DC92B89A27429DE5003B23D5 /* Cores.json */,
+			);
+			path = Recursos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +116,10 @@
 			dependencies = (
 			);
 			name = ExercicioIos;
+			packageProductDependencies = (
+				DC92B8A127429E32003B23D5 /* FirebaseAuth */,
+				DC92B8A327429E32003B23D5 /* FirebaseDatabase */,
+			);
 			productName = ExercicioIos;
 			productReference = DC92B87D27429D7F003B23D5 /* ExercicioIos.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +147,9 @@
 				Base,
 			);
 			mainGroup = DC92B87427429D7F003B23D5;
+			packageReferences = (
+				DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DC92B87E27429D7F003B23D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +167,9 @@
 				DC92B88D27429D86003B23D5 /* LaunchScreen.storyboard in Resources */,
 				DC92B88A27429D86003B23D5 /* Assets.xcassets in Resources */,
 				DC92B88827429D7F003B23D5 /* Main.storyboard in Resources */,
+				DC92B89C27429DE5003B23D5 /* logo-footer-colegio.png in Resources */,
+				DC92B89D27429DE5003B23D5 /* Cores.json in Resources */,
+				DC92B89627429DD2003B23D5 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +182,10 @@
 			files = (
 				DC92B88527429D7F003B23D5 /* ViewController.swift in Sources */,
 				DC92B88127429D7F003B23D5 /* AppDelegate.swift in Sources */,
+				DC92B89E27429DE5003B23D5 /* GradientView.swift in Sources */,
+				DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */,
+				DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */,
+				DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */,
 				DC92B88327429D7F003B23D5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +386,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC92B8A127429E32003B23D5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DC92B8A327429E32003B23D5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC92B87527429D7F003B23D5 /* Project object */;
 }
