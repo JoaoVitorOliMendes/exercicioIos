@@ -200,6 +200,7 @@
                                 <connections>
                                     <action selector="btnCad:" destination="qcv-cn-QZt" eventType="touchUpInside" id="DbA-c9-JYm"/>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBr-yG-KC4"/>
+                                    <action selector="btnPassword:" destination="qcv-cn-QZt" eventType="touchUpInside" id="5TZ-hq-aVD"/>
                                     <action selector="btnRecuperar:" destination="qcv-cn-QZt" eventType="touchUpInside" id="DEM-qI-7Ng"/>
                                 </connections>
                             </button>
@@ -241,7 +242,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bmv-Hd-OmA"/>
                     <connections>
-                        <outlet property="txtEmail" destination="hyM-pZ-UfU" id="GF2-kb-fRk"/>
+                        <outlet property="txtEmail" destination="hyM-pZ-UfU" id="ZYd-A4-FV4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJ9-Jc-ZX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
