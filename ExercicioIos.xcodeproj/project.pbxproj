@@ -22,6 +22,7 @@
 		DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8A727429FC8003B23D5 /* LoginViewController.swift */; };
 		DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */; };
 		DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */; };
+		DC92B8B42742C0DA003B23D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		DC92B8A727429FC8003B23D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				DC92B8A727429FC8003B23D5 /* LoginViewController.swift */,
 				DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */,
 				DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */,
+				DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */,
 			);
 			path = ExercicioIos;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				DC92B88527429D7F003B23D5 /* ViewController.swift in Sources */,
 				DC92B88127429D7F003B23D5 /* AppDelegate.swift in Sources */,
 				DC92B89E27429DE5003B23D5 /* GradientView.swift in Sources */,
+				DC92B8B42742C0DA003B23D5 /* HomeViewController.swift in Sources */,
 				DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */,
 				DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */,
 				DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */,

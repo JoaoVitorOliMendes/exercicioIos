@@ -1,5 +1,5 @@
 //
-//  PasswordViewController.swift
+//  HomeViewController.swift
 //  ExercicioIos
 //
 //  Created by COTEMIG on 15/11/21.
@@ -7,9 +7,8 @@
 
 import UIKit
 
-class PasswordViewController: UIViewController {
+class HomeViewController: UIViewController {
 
-    @IBOutlet weak var txtEmail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,8 +16,6 @@ class PasswordViewController: UIViewController {
     }
     
 
-    @IBAction func btnRecuperar(_ sender: Any) {
-    }
     /*
     // MARK: - Navigation
 
