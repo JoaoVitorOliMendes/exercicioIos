@@ -11,7 +11,6 @@ import Firebase
 class LoginViewController: UIViewController, homeDelegate {
     
     func didCreateUser() {
-        print("asdasdasd")
         self.gotoHome()
     }
     
@@ -39,8 +38,10 @@ class LoginViewController: UIViewController, homeDelegate {
             if e != nil{
                 print(e)
             }else{
+                print(result)
+                print("aaaaayugasuygsaugysauygsaisgasgags")
                 self.showToast(message: "Login")
-                self.gotoHome()
+                //self.gotoHome()
             }
         })
     }

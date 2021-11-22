@@ -9,6 +9,18 @@ import Foundation
 
 struct notas: Codable {
     var aluno: String
-    var id: Any
+    var id: String
     var nota: String
+    
+    var dictionary : [String: Any] {
+        return [
+            "aluno": aluno,
+            "id": id,
+            "nota": nota
+        ]
+    }
+    
+    var NSDic: NSDictionary {
+        return dictionary as NSDictionary
+    }
 }

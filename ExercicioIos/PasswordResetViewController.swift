@@ -1,14 +1,14 @@
 //
-//  PasswordViewController.swift
-//  ExercicioIos
+//  PasswordResetViewController.swift
+//  ProvaIOS27
 //
-//  Created by COTEMIG on 15/11/21.
+//  Created by COTEMIG on 17/04/43 AH.
 //
 
 import UIKit
-import Firebase
+import FirebaseAuth
 
-class PasswordViewController: UIViewController {
+class PasswordResetViewController: UIViewController {
 
     @IBOutlet weak var txtEmail: UITextField!
     override func viewDidLoad() {
@@ -17,8 +17,7 @@ class PasswordViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func btnPass(_ sender: Any) {
+    @IBAction func btnPassword(_ sender: Any) {
         let email: String = txtEmail.text ?? ""
         print(email)
         if(email == "") {
@@ -53,6 +52,8 @@ class PasswordViewController: UIViewController {
             toastLabel.removeFromSuperview()
         })
     }
+    
+
     /*
     // MARK: - Navigation
 

@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import CodableFirebase
 
 class HomeViewController: UIViewController {
 
@@ -21,9 +22,13 @@ class HomeViewController: UIViewController {
         addButtons()
         let ref = Database.database().reference()
         ref.child("notas").observe(DataEventType.value, with: { snapshot in
-            if let value = snapshot.value {
-                self.arrayNotas = value as! [[String : Any]]
+            guard let value = snapshot.value else { return }
+            do {
+                let aluno = try FirebaseDecoder().decode(notas.self, from: value)
+                self.arrayNotas.append(aluno)
                 self.tableView.reloadData()
+            } catch let error {
+                
             }
         })
     }
@@ -52,13 +57,12 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(arrayNotas.count)
         return arrayNotas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
-        let aluno =
+        let aluno = arrayNotas[indexPath.row]
         cell.NotaLbl.text = aluno.nota
         cell.AlunoLbl.text = aluno.aluno
         return cell

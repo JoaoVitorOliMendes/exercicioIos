@@ -27,7 +27,7 @@ class AddViewController: UIViewController {
             self.showToast(message: "Preencha todos os campos")
         }
         let ref = Database.database().reference()
-        let id = ref.child("notas").childByAutoId().key
+        let id = ref.child("notas").childByAutoId().key ?? ""
         
         let alunoNota = notas(
             aluno: aluno,
@@ -35,7 +35,7 @@ class AddViewController: UIViewController {
             nota: nota
         )
         
-        ref.child("notas").setValue(alunoNota.NSDic)
+        //ref.child("notas").child(<#T##pathString: String##String#>).setValue(alunoNota.NSDic)
     }
     
     func showToast(message : String) {

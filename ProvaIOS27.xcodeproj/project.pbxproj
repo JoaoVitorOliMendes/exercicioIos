@@ -10,6 +10,9 @@
 		DC080DD6274BA991004144E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DD5274BA991004144E0 /* HomeTableViewCell.swift */; };
 		DC080DDC274BAD9F004144E0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DDB274BAD9F004144E0 /* AddViewController.swift */; };
 		DC080DE9274BB803004144E0 /* notas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DE8274BB803004144E0 /* notas.swift */; };
+		DC080DED274BDE39004144E0 /* CodableFirebase in Frameworks */ = {isa = PBXBuildFile; productRef = DC080DEC274BDE39004144E0 /* CodableFirebase */; };
+		DC080DF0274BDF8A004144E0 /* enumErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DEF274BDF8A004144E0 /* enumErrors.swift */; };
+		DC080DF4274BE6A4004144E0 /* PasswordResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DF3274BE6A4004144E0 /* PasswordResetViewController.swift */; };
 		DC92B88127429D7F003B23D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B88027429D7F003B23D5 /* AppDelegate.swift */; };
 		DC92B88327429D7F003B23D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B88227429D7F003B23D5 /* SceneDelegate.swift */; };
 		DC92B88527429D7F003B23D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B88427429D7F003B23D5 /* ViewController.swift */; };
@@ -24,7 +27,6 @@
 		DC92B8A427429E32003B23D5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DC92B8A327429E32003B23D5 /* FirebaseDatabase */; };
 		DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8A727429FC8003B23D5 /* LoginViewController.swift */; };
 		DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */; };
-		DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */; };
 		DC92B8B42742C0DA003B23D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,8 @@
 		DC080DD5274BA991004144E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		DC080DDB274BAD9F004144E0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		DC080DE8274BB803004144E0 /* notas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notas.swift; sourceTree = "<group>"; };
+		DC080DEF274BDF8A004144E0 /* enumErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumErrors.swift; sourceTree = "<group>"; };
+		DC080DF3274BE6A4004144E0 /* PasswordResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewController.swift; sourceTree = "<group>"; };
 		DC92B87D27429D7F003B23D5 /* ProvaIOS27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvaIOS27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC92B88027429D7F003B23D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC92B88227429D7F003B23D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +50,6 @@
 		DC92B89B27429DE5003B23D5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DC92B8A727429FC8003B23D5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC080DED274BDE39004144E0 /* CodableFirebase in Frameworks */,
 				DC92B8A427429E32003B23D5 /* FirebaseDatabase in Frameworks */,
 				DC92B8A227429E32003B23D5 /* FirebaseAuth in Frameworks */,
 			);
@@ -103,10 +107,11 @@
 				DC92B89827429DE5003B23D5 /* Recursos */,
 				DC92B8A727429FC8003B23D5 /* LoginViewController.swift */,
 				DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */,
-				DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */,
 				DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */,
 				DC080DD5274BA991004144E0 /* HomeTableViewCell.swift */,
 				DC080DDB274BAD9F004144E0 /* AddViewController.swift */,
+				DC080DEF274BDF8A004144E0 /* enumErrors.swift */,
+				DC080DF3274BE6A4004144E0 /* PasswordResetViewController.swift */,
 			);
 			path = ExercicioIos;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			packageProductDependencies = (
 				DC92B8A127429E32003B23D5 /* FirebaseAuth */,
 				DC92B8A327429E32003B23D5 /* FirebaseDatabase */,
+				DC080DEC274BDE39004144E0 /* CodableFirebase */,
 			);
 			productName = ExercicioIos;
 			productReference = DC92B87D27429D7F003B23D5 /* ProvaIOS27.app */;
@@ -169,6 +175,7 @@
 			mainGroup = DC92B87427429D7F003B23D5;
 			packageReferences = (
 				DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DC080DEB274BDE39004144E0 /* XCRemoteSwiftPackageReference "CodableFirebase" */,
 			);
 			productRefGroup = DC92B87E27429D7F003B23D5 /* Products */;
 			projectDirPath = "";
@@ -205,10 +212,11 @@
 				DC92B88127429D7F003B23D5 /* AppDelegate.swift in Sources */,
 				DC92B89E27429DE5003B23D5 /* GradientView.swift in Sources */,
 				DC92B8B42742C0DA003B23D5 /* HomeViewController.swift in Sources */,
-				DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */,
 				DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */,
 				DC080DE9274BB803004144E0 /* notas.swift in Sources */,
+				DC080DF4274BE6A4004144E0 /* PasswordResetViewController.swift in Sources */,
 				DC080DD6274BA991004144E0 /* HomeTableViewCell.swift in Sources */,
+				DC080DF0274BDF8A004144E0 /* enumErrors.swift in Sources */,
 				DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */,
 				DC92B88327429D7F003B23D5 /* SceneDelegate.swift in Sources */,
 			);
@@ -412,6 +420,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DC080DEB274BDE39004144E0 /* XCRemoteSwiftPackageReference "CodableFirebase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alickbass/CodableFirebase";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
 		DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -423,6 +439,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC080DEC274BDE39004144E0 /* CodableFirebase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC080DEB274BDE39004144E0 /* XCRemoteSwiftPackageReference "CodableFirebase" */;
+			productName = CodableFirebase;
+		};
 		DC92B8A127429E32003B23D5 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DC92B8A027429E32003B23D5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

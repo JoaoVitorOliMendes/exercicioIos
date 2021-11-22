@@ -43,7 +43,6 @@
                                         </state>
                                         <connections>
                                             <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QTP-ou-gaF"/>
-                                            <segue destination="iQb-KU-fuN" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="DIr-av-dwm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nct-fW-VaS">
@@ -102,6 +101,7 @@
                     <connections>
                         <outlet property="txtEmail" destination="CbP-MH-zCs" id="o1T-6u-fMr"/>
                         <outlet property="txtSenha" destination="J6G-ql-BOR" id="zoV-xh-gHW"/>
+                        <segue destination="iQb-KU-fuN" kind="presentation" identifier="home" modalPresentationStyle="fullScreen" id="cyf-IO-oMZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -182,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="873.91304347826099" y="118.52678571428571"/>
         </scene>
-        <!--Password View Controller-->
+        <!--Password Reset View Controller-->
         <scene sceneID="yUz-Tt-vDl">
             <objects>
-                <viewController id="qcv-cn-QZt" customClass="PasswordViewController" customModule="ProvaIOS27" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qcv-cn-QZt" customClass="PasswordResetViewController" customModule="ProvaIOS27" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tsp-r9-IdV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -200,7 +200,8 @@
                                 <connections>
                                     <action selector="btnCad:" destination="qcv-cn-QZt" eventType="touchUpInside" id="DbA-c9-JYm"/>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WBr-yG-KC4"/>
-                                    <action selector="btnPassword:" destination="qcv-cn-QZt" eventType="touchUpInside" id="5TZ-hq-aVD"/>
+                                    <action selector="btnPass:" destination="qcv-cn-QZt" eventType="touchUpInside" id="4lv-nY-8ru"/>
+                                    <action selector="btnPassword:" destination="qcv-cn-QZt" eventType="touchUpInside" id="CJk-Mf-eZX"/>
                                     <action selector="btnRecuperar:" destination="qcv-cn-QZt" eventType="touchUpInside" id="DEM-qI-7Ng"/>
                                 </connections>
                             </button>
@@ -242,7 +243,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="bmv-Hd-OmA"/>
                     <connections>
-                        <outlet property="txtEmail" destination="hyM-pZ-UfU" id="ZYd-A4-FV4"/>
+                        <outlet property="txtEmail" destination="hyM-pZ-UfU" id="6hH-41-8Po"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iJ9-Jc-ZX9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
