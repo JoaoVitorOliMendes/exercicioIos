@@ -6,13 +6,35 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var arrayNotas: [notas] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.dataSource = self
+        addButtons()
+        let ref = Database.database().reference()
+        ref.child("notas").observe(DataEventType.value, with: { snapshot in
+            if let value = snapshot.value {
+                self.arrayNotas = value as! [[String : Any]]
+                self.tableView.reloadData()
+            }
+        })
+    }
+    func addButtons() {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(
+                barButtonSystemItem: .add, target: self, action: #selector(nextPage)
+            )
+    }
+    @objc func nextPage() {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "AddViewController") as! AddViewController
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 
@@ -26,4 +48,21 @@ class HomeViewController: UIViewController {
     }
     */
 
+}
+
+extension HomeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(arrayNotas.count)
+        return arrayNotas.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HomeTableViewCell
+        let aluno =
+        cell.NotaLbl.text = aluno.nota
+        cell.AlunoLbl.text = aluno.aluno
+        return cell
+    }
+    
+    
 }

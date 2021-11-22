@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC080DD6274BA991004144E0 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DD5274BA991004144E0 /* HomeTableViewCell.swift */; };
+		DC080DDC274BAD9F004144E0 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DDB274BAD9F004144E0 /* AddViewController.swift */; };
+		DC080DE9274BB803004144E0 /* notas.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC080DE8274BB803004144E0 /* notas.swift */; };
 		DC92B88127429D7F003B23D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B88027429D7F003B23D5 /* AppDelegate.swift */; };
 		DC92B88327429D7F003B23D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B88227429D7F003B23D5 /* SceneDelegate.swift */; };
 		DC92B88527429D7F003B23D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC92B88427429D7F003B23D5 /* ViewController.swift */; };
@@ -26,7 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DC92B87D27429D7F003B23D5 /* ExercicioIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExercicioIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC080DD5274BA991004144E0 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DC080DDB274BAD9F004144E0 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		DC080DE8274BB803004144E0 /* notas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notas.swift; sourceTree = "<group>"; };
+		DC92B87D27429D7F003B23D5 /* ProvaIOS27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProvaIOS27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC92B88027429D7F003B23D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC92B88227429D7F003B23D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DC92B88427429D7F003B23D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC080DE2274BB564004144E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC080DE8274BB803004144E0 /* notas.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DC92B87427429D7F003B23D5 = {
 			isa = PBXGroup;
 			children = (
@@ -68,7 +82,7 @@
 		DC92B87E27429D7F003B23D5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC92B87D27429D7F003B23D5 /* ExercicioIos.app */,
+				DC92B87D27429D7F003B23D5 /* ProvaIOS27.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +90,7 @@
 		DC92B87F27429D7F003B23D5 /* ExercicioIos */ = {
 			isa = PBXGroup;
 			children = (
+				DC080DE2274BB564004144E0 /* Models */,
 				DC92B88027429D7F003B23D5 /* AppDelegate.swift */,
 				DC92B88227429D7F003B23D5 /* SceneDelegate.swift */,
 				DC92B89527429DD2003B23D5 /* GoogleService-Info.plist */,
@@ -90,6 +105,8 @@
 				DC92B8AA2742A889003B23D5 /* RegisterViewController.swift */,
 				DC92B8AD2742AC91003B23D5 /* PasswordViewController.swift */,
 				DC92B8B32742C0DA003B23D5 /* HomeViewController.swift */,
+				DC080DD5274BA991004144E0 /* HomeTableViewCell.swift */,
+				DC080DDB274BAD9F004144E0 /* AddViewController.swift */,
 			);
 			path = ExercicioIos;
 			sourceTree = "<group>";
@@ -106,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DC92B87C27429D7F003B23D5 /* ExercicioIos */ = {
+		DC92B87C27429D7F003B23D5 /* ProvaIOS27 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC92B89127429D86003B23D5 /* Build configuration list for PBXNativeTarget "ExercicioIos" */;
+			buildConfigurationList = DC92B89127429D86003B23D5 /* Build configuration list for PBXNativeTarget "ProvaIOS27" */;
 			buildPhases = (
 				DC92B87927429D7F003B23D5 /* Sources */,
 				DC92B87A27429D7F003B23D5 /* Frameworks */,
@@ -118,13 +135,13 @@
 			);
 			dependencies = (
 			);
-			name = ExercicioIos;
+			name = ProvaIOS27;
 			packageProductDependencies = (
 				DC92B8A127429E32003B23D5 /* FirebaseAuth */,
 				DC92B8A327429E32003B23D5 /* FirebaseDatabase */,
 			);
 			productName = ExercicioIos;
-			productReference = DC92B87D27429D7F003B23D5 /* ExercicioIos.app */;
+			productReference = DC92B87D27429D7F003B23D5 /* ProvaIOS27.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +158,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DC92B87827429D7F003B23D5 /* Build configuration list for PBXProject "ExercicioIos" */;
+			buildConfigurationList = DC92B87827429D7F003B23D5 /* Build configuration list for PBXProject "ProvaIOS27" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC92B87C27429D7F003B23D5 /* ExercicioIos */,
+				DC92B87C27429D7F003B23D5 /* ProvaIOS27 */,
 			);
 		};
 /* End PBXProject section */
@@ -183,12 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC080DDC274BAD9F004144E0 /* AddViewController.swift in Sources */,
 				DC92B88527429D7F003B23D5 /* ViewController.swift in Sources */,
 				DC92B88127429D7F003B23D5 /* AppDelegate.swift in Sources */,
 				DC92B89E27429DE5003B23D5 /* GradientView.swift in Sources */,
 				DC92B8B42742C0DA003B23D5 /* HomeViewController.swift in Sources */,
 				DC92B8AE2742AC91003B23D5 /* PasswordViewController.swift in Sources */,
 				DC92B8AB2742A889003B23D5 /* RegisterViewController.swift in Sources */,
+				DC080DE9274BB803004144E0 /* notas.swift in Sources */,
+				DC080DD6274BA991004144E0 /* HomeTableViewCell.swift in Sources */,
 				DC92B8A827429FC8003B23D5 /* LoginViewController.swift in Sources */,
 				DC92B88327429D7F003B23D5 /* SceneDelegate.swift in Sources */,
 			);
@@ -371,7 +391,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC92B87827429D7F003B23D5 /* Build configuration list for PBXProject "ExercicioIos" */ = {
+		DC92B87827429D7F003B23D5 /* Build configuration list for PBXProject "ProvaIOS27" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC92B88F27429D86003B23D5 /* Debug */,
@@ -380,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC92B89127429D86003B23D5 /* Build configuration list for PBXNativeTarget "ExercicioIos" */ = {
+		DC92B89127429D86003B23D5 /* Build configuration list for PBXNativeTarget "ProvaIOS27" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC92B89227429D86003B23D5 /* Debug */,
