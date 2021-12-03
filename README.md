@@ -1,4 +1,4 @@
 # exercicioIos
-Ios Final test
+Ios exercise before final test
 <br>
-Full Ios app using Firebase and Firebase Auth
+Full Ios app using Firebase Auth for login, authentication and password reset
